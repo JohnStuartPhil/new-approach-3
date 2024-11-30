@@ -1,8 +1,7 @@
+import random
 from rich.console import Console
-
 console = Console()
 
-import random
 
 class The_options:
     """Defines the options"""
@@ -12,7 +11,7 @@ class The_options:
         self.capital = capital
         self.incorrect_1 = incorrect_1
         self.incorrect_2 = incorrect_2
-    
+
     def the_question(self):
         """shows the repetative parts question with data in there"""
         print(f"\nQuestion {self.number}: What is the capital of {self.country}?\n")
@@ -22,6 +21,7 @@ class The_options:
         print('B: ', options[1])
         print('C: ', options[2])
         return options
+
 
 def the_instructions():
     console.input("\n[bold]Welcome to the capitals quiz, press Enter to continue\n")
@@ -102,11 +102,11 @@ def the_quiz():
 
     for index, question in enumerate(dictionary):
         question = The_options(
-            number = index + 1,
-            country = question['country'],
-            capital = question['capital'],
-            incorrect_1 = question['incorrect_1'],
-            incorrect_2 = question['incorrect_2']
+            number=index + 1,
+            country=question['country'],
+            capital=question['capital'],
+            incorrect_1=question['incorrect_1'],
+            incorrect_2=question['incorrect_2']
         )
         options = question.the_question()
         while True:
@@ -116,15 +116,15 @@ def the_quiz():
             else:
                 break
 
-        if available_options.upper() == 'A' and options [0] == question.capital:
+        if available_options.upper() == 'A' and options[0] == question.capital:
             console.print("[bold]Well done, that is the correct option", style="green")
             score += 1
             print("Your score is currently:", score)
-        elif available_options.upper() == 'B' and options [1] == question.capital:
+        elif available_options.upper() == 'B' and options[1] == question.capital:
             console.print("[bold]Well done, that is the correct option", style="green")
             score += 1
             print("Your score is currently:", score)
-        elif available_options.upper() == 'C' and options [2] == question.capital:
+        elif available_options.upper() == 'C' and options[2] == question.capital:
             console.print("[bold]Well done, that is the correct option", style="green")
             score += 1
             print("Your score is currently:", score)
@@ -134,6 +134,7 @@ def the_quiz():
 
     console.print("\n[bold]Thank your for playing the capitals quiz")
     console.print("\n[bold]You scored:", score, "[bold]points out of 10\n")
+
 
 the_instructions()  
 the_quiz()
