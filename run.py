@@ -85,6 +85,8 @@ def the_quiz():
         }
     ]
 
+    score = 0
+    
     for index, question in enumerate(dictionary):
         question = The_options(
             number = index + 1,
@@ -103,11 +105,18 @@ def the_quiz():
 
         if available_options.upper() == 'A' and options [0] == question.capital:
             print("Well done, that is the correct option")
+            score += 1
+            print("Your score is currently:", score)
         elif available_options.upper() == 'B' and options [1] == question.capital:
             print("Well done, that is the correct option")
+            score += 1
+            print("Your score is currently:", score)
         elif available_options.upper() == 'C' and options [2] == question.capital:
             print("Well done, that is the correct option")
+            score += 1
+            print("Your score is currently:", score)
         else:
             print("Sorry, that was not the correct option")
+            print("Your score remains at:", score)
         
 the_quiz()
