@@ -12,7 +12,7 @@ Features:
 The question is asked 
 -   If the player selects the correct option, the player is notified of this, is given a score of 1 for that question and then the next question is generated. 
 
-![selected the correct answer](.PNG)
+![selected the correct answer](assets/imagesforreadme/testpic.PNG)
 
 -   If the player selects the incorrect option, the player is notified of this, is advised that the score remains as it previously was and the next question is generated. 
 
