@@ -1,7 +1,33 @@
+import random
+
+class The_options:
+    """Defines the options"""
+    def __init__(self, number, country, capital, incorrect_1, incorrect_2):
+        self.number = number
+        self.country = country
+        self.capital = capital
+        self.incorrect_1 = incorrect_1
+        self.incorrect_2 = incorrect_2
+        self.a = a
+        self.b = b
+        self.c = c
+    
+    def the_question():
+        """shows the repetative parts question with data in there"""
+        print(f"Question {self.number}: What is the capital of {self.country}?")
+        options = [self.capital, self.incorrect_1, self.incorrect_2]
+        random.shuffle(options)
+        print('A: ', options[0])
+        print('B: ', options[1])
+        print('C: ', options[2])
+        return options
 
 
-def the_options():
-    """data"""
+
+
+
+def the_data():
+    """the data"""
     options = [
         {
             'country': 'the United States',
