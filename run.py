@@ -11,7 +11,7 @@ class The_options:
     
     def the_question(self):
         """shows the repetative parts question with data in there"""
-        print(f"Question {self.number}: What is the capital of {self.country}?")
+        print(f"\nQuestion {self.number}: What is the capital of {self.country}?\n")
         options = [self.capital, self.incorrect_1, self.incorrect_2]
         random.shuffle(options)
         print('A: ', options[0])
@@ -86,7 +86,7 @@ def the_quiz():
     ]
 
     score = 0
-    
+
     for index, question in enumerate(dictionary):
         question = The_options(
             number = index + 1,
@@ -97,26 +97,26 @@ def the_quiz():
         )
         options = question.the_question()
         while True:
-            available_options = input("Please select an option of A, B or C then press Enter:\n")
+            available_options = input("\nPlease select an option of A, B or C then press Enter:\n\n")
             if available_options.upper() not in ['A', 'B', 'C']:
-                print("That is not a valid option, please select A, B or C")
+                print("That is not a valid option, please select A, B or C\n\n")
             else:
                 break
 
         if available_options.upper() == 'A' and options [0] == question.capital:
-            print("Well done, that is the correct option")
+            print("Well done, that is the correct option\n")
             score += 1
             print("Your score is currently:", score)
         elif available_options.upper() == 'B' and options [1] == question.capital:
-            print("Well done, that is the correct option")
+            print("Well done, that is the correct option\n")
             score += 1
             print("Your score is currently:", score)
         elif available_options.upper() == 'C' and options [2] == question.capital:
-            print("Well done, that is the correct option")
+            print("Well done, that is the correct option\n")
             score += 1
             print("Your score is currently:", score)
         else:
-            print("Sorry, that was not the correct option")
-            print("Your score remains at:", score)
+            print("\nSorry, that was not the correct option")
+            print("\nYour score remains at:", score)
         
 the_quiz()
