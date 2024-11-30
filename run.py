@@ -108,19 +108,22 @@ def the_quiz():
                 break
 
         if available_options.upper() == 'A' and options [0] == question.capital:
-            console.print("Well done, that is the correct option", style="green")
+            console.print("[bold]Well done, that is the correct option", style="green")
             score += 1
             print("Your score is currently:", score)
         elif available_options.upper() == 'B' and options [1] == question.capital:
-            console.print("Well done, that is the correct option", style="green")
+            console.print("[bold]Well done, that is the correct option", style="green")
             score += 1
             print("Your score is currently:", score)
         elif available_options.upper() == 'C' and options [2] == question.capital:
-            console.print("Well done, that is the correct option", style="green")
+            console.print("[bold]Well done, that is the correct option", style="green")
             score += 1
             print("Your score is currently:", score)
         else:
-            console.print("\nSorry, that was not the correct option", style ="red")
+            console.print("[bold]\nSorry, that was not the correct option", style="red")
             print("\nYour score remains at:", score)
+
+    print("\nThank your for playing the capitals quiz")
+    print("\n[bold]You scored:", score, "out of 10\n")
         
 the_quiz()
