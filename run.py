@@ -1,3 +1,7 @@
+from rich.console import Console
+
+console = Console()
+
 import random
 
 class The_options:
@@ -104,19 +108,19 @@ def the_quiz():
                 break
 
         if available_options.upper() == 'A' and options [0] == question.capital:
-            print("Well done, that is the correct option\n")
+            console.print("Well done, that is the correct option", style="green")
             score += 1
             print("Your score is currently:", score)
         elif available_options.upper() == 'B' and options [1] == question.capital:
-            print("Well done, that is the correct option\n")
+            console.print("Well done, that is the correct option", style="green")
             score += 1
             print("Your score is currently:", score)
         elif available_options.upper() == 'C' and options [2] == question.capital:
-            print("Well done, that is the correct option\n")
+            console.print("Well done, that is the correct option", style="green")
             score += 1
             print("Your score is currently:", score)
         else:
-            print("\nSorry, that was not the correct option")
+            console.print("\nSorry, that was not the correct option", style ="red")
             print("\nYour score remains at:", score)
         
 the_quiz()
