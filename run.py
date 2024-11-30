@@ -8,11 +8,8 @@ class The_options:
         self.capital = capital
         self.incorrect_1 = incorrect_1
         self.incorrect_2 = incorrect_2
-        self.a = a
-        self.b = b
-        self.c = c
     
-    def the_question():
+    def the_question(self):
         """shows the repetative parts question with data in there"""
         print(f"Question {self.number}: What is the capital of {self.country}?")
         options = [self.capital, self.incorrect_1, self.incorrect_2]
@@ -23,12 +20,9 @@ class The_options:
         return options
 
 
-
-
-
-def the_data():
+def the_quiz():
     """the data"""
-    options = [
+    dictionary = [
         {
             'country': 'the United States',
             'capital': 'Washington DC',
@@ -91,5 +85,29 @@ def the_data():
         }
     ]
 
+    for index, question in enumerate(dictionary):
+        question = The_options(
+            number = index + 1,
+            country = question['country'],
+            capital = question['capital'],
+            incorrect_1 = question['incorrect_1'],
+            incorrect_2 = question['incorrect_2']
+        )
+        options = question.the_question()
+        while True:
+            availble_options = input("Please select an option of A, B or C then press Enter:\n")
+            if available_options not in ['A', 'B', 'C']:
+                print("That is not a valid option, please select A, B or C")
+            else:
+                break
 
-    
+        if availble_options == 'A' and options [0] == question.capital:
+            print("Well done, that is the correct option")
+        elif availble_options == 'B' and options [1] == question.capital:
+            print("Well done, that is the correct option")
+        elif availble_options == 'C' and options [2] == question.capital:
+            print("Well done, that is the correct option")
+        else:
+            print("Sorry, that was not the correct option")
+        
+the_quiz()
