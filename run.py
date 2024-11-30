@@ -24,13 +24,13 @@ class The_options:
         return options
 
 def the_instructions():
-    input("Welcome to the capitals quiz, press Enter to continue\n")
+    console.input("\n[bold]Welcome to the capitals quiz, press Enter to continue\n")
     print("You shall be asked for the capital of 10 countries\n")
-    print("You shall be given a choice of 3 cities in that country, listed as A, B and C")
-    print("Please select either A, B or C")
-    print("You shall be advised if that is the correct answer or not")
-    print("If you select anything other than A, B or C, you shall be asked to make a choice again until you select A, B or C")
-    input("Press Enter to continue")
+    print("You shall be given a choice of 3 cities in that country, listed as A, B and C\n")
+    print("Please select either A, B or C\n")
+    print("You shall be advised if that is the correct answer or not\n")
+    print("If you select anything other than A, B or C, you shall be asked to make a choice again until you select A, B or C\n")
+    input("Press Enter to continue\n")
 
 
 def the_quiz():
@@ -132,8 +132,8 @@ def the_quiz():
             console.print("[bold]\nSorry, that was not the correct option", style="red")
             print("\nYour score remains at:", score)
 
-    print("\nThank your for playing the capitals quiz")
-    print("\n[bold]You scored:", score, "out of 10\n")
+    console.print("\n[bold]Thank your for playing the capitals quiz")
+    console.print("\n[bold]You scored:", score, "[bold]points out of 10\n")
 
 the_instructions()  
 the_quiz()
