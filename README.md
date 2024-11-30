@@ -3,7 +3,7 @@ Capitals Quiz is a Python terminal quiz, which runs in the Code Institute mock t
 
 <Here is the live version of the project | link to Heroku>
 
-![Website displayed on multiple screens](.PNG)
+![Website displayed on multiple screens](assets/imagesforreadme/testpic.PNG)
 
 ## How to play 
 Users are asked what the capital is of 10 countries and are given a selection of 3 potential answers, listed as A, B and C. One of the answers shall be the capital and therefore the correct answer while the other two options shall be incorrect answers. The other two options however are both cities in that particular country. 
@@ -16,11 +16,11 @@ The question is asked
 
 -   If the player selects the incorrect option, the player is notified of this, is advised that the score remains as it previously was and the next question is generated. 
 
-![selected an incorrect answer](.PNG)
+![selected an incorrect answer](assets/imagesforreadme/testpic.PNG)
 
 -   If the player selects anything other than a/A, b/B or c/C, the player is notified that what they have selected is not an option (this includes not selecting anything and just pressing return) and is asked to select A, B or C again until they select a/A, b/B or c/C. 
 
-![not selected a/A, b/B nor c/C](.PNG)
+![not selected a/A, b/B nor c/C](assets/imagesforreadme/testpic.PNG)
 
 At the end of the quiz
 -   The player is given their final score out of 10
