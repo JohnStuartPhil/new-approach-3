@@ -95,17 +95,17 @@ def the_quiz():
         )
         options = question.the_question()
         while True:
-            availble_options = input("Please select an option of A, B or C then press Enter:\n")
+            available_options = input("Please select an option of A, B or C then press Enter:\n")
             if available_options not in ['A', 'B', 'C']:
                 print("That is not a valid option, please select A, B or C")
             else:
                 break
 
-        if availble_options == 'A' and options [0] == question.capital:
+        if available_options == 'A' and options [0] == question.capital:
             print("Well done, that is the correct option")
-        elif availble_options == 'B' and options [1] == question.capital:
+        elif available_options == 'B' and options [1] == question.capital:
             print("Well done, that is the correct option")
-        elif availble_options == 'C' and options [2] == question.capital:
+        elif available_options == 'C' and options [2] == question.capital:
             print("Well done, that is the correct option")
         else:
             print("Sorry, that was not the correct option")
