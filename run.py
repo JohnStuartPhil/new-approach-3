@@ -137,9 +137,11 @@ def the_quiz():
     console.print("\n[bold]Thank your for playing the capitals quiz")
     console.print("\n[bold]You scored:", score, "[bold]points out of 10\n")
 
+
 def clear_screen():
     """clears the screen"""
     os.system("cls" if os.name == "nt" else "clear")
 
-the_instructions()  
+
+the_instructions()
 the_quiz()
