@@ -27,15 +27,15 @@ class The_options:
 
 
 def the_instructions():
-    console.input("\n[bold]Welcome to the capitals quiz,\
-                  press Enter to continue\n")
+    message = "Welcome to the capitals quiz, press Enter to continue"
+    console.input(f"\n[bold]{message}\n")
     print("You shall be asked for the capital of 10 countries\n")
-    print("You shall be given a choice of 3 cities in that country, listed\
-          as A, B and C\n")
+    print("You shall be given a choice of 3 cities in that country", end=" ")
+    print("listed as A, B and C\n")
     print("Please select either A, B or C\n")
     print("You shall be advised if that is the correct answer or not\n")
-    print("If you select anything other than A, B or C, you shall be asked\
-          to make a choice again until you select A, B or C\n")
+    print("If you select anything other than A, B or C, you shall", end=" ")
+    print("be asked to make a choice again until you select A, B or C\n")
     input("Press Enter to continue\n")
     clear_screen()
 
