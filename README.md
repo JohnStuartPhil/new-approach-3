@@ -64,5 +64,8 @@ This project was deployed using Code Institute’s mock terminal for Heroku
 
 ## Credits 
 -   Code Institute for the deployment terminal 
+-   Patrick Rich for the video 'Beautiful Terminal Styling in Python With Rich' which was used to help with the colors and styling
+-   The aforementioned Patrick Rich video can be found on [YouTube](https://www.youtube.com/watch?v=4zbehnz-8QU)
+
 ## Thanks to
 -   Mentor: Matthew Bodden 
