@@ -21,20 +21,21 @@ If the player selects the correct option, the player is notified of this, is giv
 
 ![Correct answer](assets/imagesforreadme/correctanswer.PNG)
 
--   If the player selects the incorrect option, the player is notified of this, is advised that the score remains as it previously was and the next question is generated. 
+If the player selects the incorrect option, the player is notified of this, is advised that the score remains as it previously was and the next question is generated. 
 
 ![Incorrect answer](assets/imagesforreadme/incorrectanswer.PNG)
 
--   If the player selects anything other than a/A, b/B or c/C, the player is notified that what they have selected is not an option and is asked to select A, B or C again until they select a/A, b/B or c/C. 
+If the player selects anything other than a/A, b/B or c/C, the player is notified that what they have selected is not an option and is asked to select A, B or C again until they select a/A, b/B or c/C. 
 
 ![Not selected a/A, b/B nor c/C](assets/imagesforreadme/notanoption.PNG)
 
--   Simiarly, if the player doesn't select anything and just presses Enter, the player is notified that what they have selected is not an option and is asked to select A, B or C again until they select a/A, b/B or c/C. 
+Simiarly, if the player doesn't select anything and just presses Enter, the player is notified that what they have selected is not an option and is asked to select A, B or C again until they select a/A, b/B or c/C. 
 
 ![Only pressed Enter](assets/imagesforreadme/alsonotanoption.PNG)
 
 At the end of the quiz
--   The player is given their final score out of 10
+
+The player is given their final score out of 10
 
 ![At the end of the quiz](assets/imagesforreadme/endofquiz.PNG)
 
