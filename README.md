@@ -62,6 +62,8 @@ I have manually tested this project by doing the following:
 -   PEP8 
     -   No errors were returned from PEP8online.com
 
+![Screenshot of passing PEP8](assets/imagesforreadme/noerrorspep.PNG)
+
 ## Bugs 
 When testing in PEP8, initial bugs such as 'unexpected Whitespace' and 'no newline at end of file' were easily resolved, multiple lines of code brought up the error 'line too long (xx > 79 characters)'.
 Most of these lines going over column 80 contained a string of text.
