@@ -50,7 +50,8 @@ I have manually tested this project by doing the following:
 | 1  |  Question | Entered the correct option in lower case  | Advised that the correct option was entered and gave one point  | Pass  |
 | 2  |  Question | Entered one of the incorrect options in lower case | Advised that the correct option was not entered and advised that the points remained as they were before  | Pass  |
 | 3  |  Question | Entered the other incorrect option in lower case | Advised that the correct option was not entered and advised that the points remained as they were before  |  Pass |
-| 4  |  Question | Entered one of the incorrect options in upper case | Advised that the correct option was not entered and advised that the points remained as they were before  | Pass  |
+| 4  |  Question | Entered the correct option in upper case  | Advised that the correct option was entered and gave one point  | Pass  |
+| 5  |  Question | Entered one of the incorrect options in upper case | Advised that the correct option was not entered and advised that the points remained as they were before  | Pass  |
 | 6  |  Question | Entered the other incorrect option in upper case | Advised that the correct option was not entered and advised that the points remained as they were before  |  Pass |
 |  7 |  Question  | Entered a character other than a/A, b/B or c/C   | Advised that what was entered was not a valid option and was prompted to enter A, B or C  |  Pass |
 | 8  |  Question  | Entered multiple charachetrs including aa, bb, cc  | Advised that what was entered was not a valid option and was prompted to enter A, B or C  | Pass  |
