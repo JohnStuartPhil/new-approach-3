@@ -32,6 +32,7 @@ def the_instructions():
     print("You shall be advised if that is the correct answer or not\n")
     print("If you select anything other than A, B or C, you shall be asked to make a choice again until you select A, B or C\n")
     input("Press Enter to continue\n")
+    clear_screen()
 
 
 def the_quiz():
@@ -136,6 +137,9 @@ def the_quiz():
     console.print("\n[bold]Thank your for playing the capitals quiz")
     console.print("\n[bold]You scored:", score, "[bold]points out of 10\n")
 
+def clear_screen():
+    """clears the screen"""
+    os.system("cls" if os.name == "nt" else "clear")
 
 the_instructions()  
 the_quiz()
