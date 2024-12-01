@@ -16,7 +16,8 @@ class The_options:
 
     def the_question(self):
         """shows the repetative parts question with data in there"""
-        print(f"\nQuestion {self.number}: What is the capital of {self.country}?\n")
+        print(f"\nQuestion {self.number}: What is the capital of \
+            {self.country}?\n")
         options = [self.capital, self.incorrect_1, self.incorrect_2]
         random.shuffle(options)
         print('A: ', options[0])
@@ -26,12 +27,15 @@ class The_options:
 
 
 def the_instructions():
-    console.input("\n[bold]Welcome to the capitals quiz, press Enter to continue\n")
+    console.input("\n[bold]Welcome to the capitals quiz,\
+                  press Enter to continue\n")
     print("You shall be asked for the capital of 10 countries\n")
-    print("You shall be given a choice of 3 cities in that country, listed as A, B and C\n")
+    print("You shall be given a choice of 3 cities in that country, listed\
+          as A, B and C\n")
     print("Please select either A, B or C\n")
     print("You shall be advised if that is the correct answer or not\n")
-    print("If you select anything other than A, B or C, you shall be asked to make a choice again until you select A, B or C\n")
+    print("If you select anything other than A, B or C, you shall be asked\
+          to make a choice again until you select A, B or C\n")
     input("Press Enter to continue\n")
     clear_screen()
 
@@ -113,26 +117,34 @@ def the_quiz():
         )
         options = question.the_question()
         while True:
-            available_options = input("\nPlease select an option of A, B or C then press Enter:\n\n")
+            available_options = input("\nPlease select an option of A, B or C\
+                                      then press Enter:\n\n")
             if available_options.upper() not in ['A', 'B', 'C']:
-                console.print("[bold]That is not a valid option, please select A, B or C\n\n", style="blue")
+                console.print("[bold]That is not a valid option, please select\
+                              A, B or C\n\n", style="blue")
             else:
                 break
 
         if available_options.upper() == 'A' and options[0] == question.capital:
-            console.print("[bold]\nWell done, that is the correct option", style="green")
+            console.print("[bold]\nWell done, that is the correct option",
+                          style="green")
             score += 1
             print("\nYour score is currently:", score)
-        elif available_options.upper() == 'B' and options[1] == question.capital:
-            console.print("[bold]\nWell done, that is the correct option", style="green")
+        elif (available_options.upper() == 'B'
+              and options[1] == question.capital):
+            console.print("[bold]\nWell done, that is the correct option",
+                          style="green")
             score += 1
             print("\nYour score is currently:", score)
-        elif available_options.upper() == 'C' and options[2] == question.capital:
-            console.print("[bold]\nWell done, that is the correct option", style="green")
+        elif (available_options.upper() == 'C'
+              and options[2] == question.capital):
+            console.print("[bold]\nWell done, that is the correct option",
+                          style="green")
             score += 1
             print("\nYour score is currently:", score)
         else:
-            console.print("[bold]\nSorry, that was not the correct option", style="red")
+            console.print("[bold]\nSorry, that was not the correct option",
+                          style="red")
             print("\nYour score remains at:", score)
 
         time.sleep(2)
