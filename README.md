@@ -1,18 +1,22 @@
 # Capitals Quiz 
 Capitals Quiz is a Python terminal quiz, which runs in the Code Institute mock terminal on Heroku. 
 
-<Here is the live version of the project | link to Heroku>
+[Here is the live version of the project](https://johns-capitals-quiz-91df1cc5b9af.herokuapp.com/)
 
-![Website displayed on multiple screens](assets/imagesforreadme/testpic.PNG)
+![Website displayed on multiple screens](assets/imagesforreadme/screenshots.PNG)
 
 ## How to play 
 Users are asked what the capital is of 10 countries and are given a selection of 3 potential answers, listed as A, B and C. One of the answers shall be the capital and therefore the correct answer while the other two options shall be incorrect answers. The other two options however are both cities in that particular country. 
 
 Features: 
+
+Instructions on how to paly the game 
+![Website displayed on multiple screens](assets/imagesforreadme/instructions.PNG)
+
 The question is asked 
 -   If the player selects the correct option, the player is notified of this, is given a score of 1 for that question and then the next question is generated. 
 
-![selected the correct answer](assets/imagesforreadme/testpic.PNG)
+![selected the correct answer](assets/imagesforreadme/question.PNG)
 
 -   If the player selects the incorrect option, the player is notified of this, is advised that the score remains as it previously was and the next question is generated. 
 
