@@ -1,5 +1,6 @@
 import random
 import os
+import time
 from rich.console import Console
 console = Console()
 
@@ -114,7 +115,7 @@ def the_quiz():
         while True:
             available_options = input("\nPlease select an option of A, B or C then press Enter:\n\n")
             if available_options.upper() not in ['A', 'B', 'C']:
-                print("That is not a valid option, please select A, B or C\n\n")
+                console.print("[bold]That is not a valid option, please select A, B or C\n\n", style="blue")
             else:
                 break
 
@@ -133,6 +134,9 @@ def the_quiz():
         else:
             console.print("[bold]\nSorry, that was not the correct option", style="red")
             print("\nYour score remains at:", score)
+        
+        time.sleep(3)
+        clear_screen()
 
     console.print("\n[bold]Thank your for playing the capitals quiz")
     console.print("\n[bold]You scored:", score, "[bold]points out of 10\n")
