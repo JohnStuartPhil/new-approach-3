@@ -81,11 +81,11 @@ The second method was to create a variable and allocate the text to it then crea
 
 This is what the code looked like before the error was fixed:
 
-![Code before error fixed](assets/imagesforreadme/before2.PNG)
+![More code before error fixed](assets/imagesforreadme/before2.PNG)
 
 This is what the code looked like after the error has been fixed:
 
-![Code after error fixed using =end" " method](assets/imagesforreadme/after2.PNG)
+![Code after error fixed using variable and f-string method](assets/imagesforreadme/after2.PNG)
 
 
 
