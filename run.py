@@ -16,8 +16,8 @@ class The_options:
 
     def the_question(self):
         """shows the repetative parts question with data in there"""
-        print(f"\nQuestion {self.number}: What is the capital of \
-            {self.country}?\n")
+        print(f"\nQuestion {self.number}: What is the capital of", end=" ")
+        print(f"{self.country}?\n")
         options = [self.capital, self.incorrect_1, self.incorrect_2]
         random.shuffle(options)
         print('A: ', options[0])
