@@ -117,11 +117,11 @@ def the_quiz():
         )
         options = question.the_question()
         while True:
-            available_options = input("\nPlease select an option of A, B or C\
-                                      then press Enter:\n\n")
+            msg = "Please select an option of A, B or C then press Enter:"
+            available_options = input(f"\n{msg}\n\n")
             if available_options.upper() not in ['A', 'B', 'C']:
-                console.print("[bold]That is not a valid option, please select\
-                              A, B or C\n\n", style="blue")
+                error = "That is not a valid option, please select A, B or C"
+                console.print(f"[bold]{error}\n\n", style="blue")
             else:
                 break
 
