@@ -56,13 +56,38 @@ I have manually tested this project by doing the following:
 | 9  |  Question  | Pressed Enter without entering any characters  | Advised that what was entered was not a valid option and was prompted to enter A, B or C  | Pass  |
 |  10 | Question   | Repeated entering an invalid input multiple times  | Contnued to advise that what was entered was not a valid option and was prompted to enter A, B or C   |  Pass |
 
-
-## Bugs 
--   No bugs 
-
 ## Validator 
 -   PEP8 
     -   No errors were returned from PEP8online.com
+
+## Bugs 
+When testing in PEP8, initial bugs such as 'unexpected Whitespace' and 'no newline at end of file' were easily resolved, multiple lines of code brought up the error 'line too long (xx > 79 characters)'.
+Most of these lines going over column 80 contained a string of text.
+
+These lines were shortend to below column 80 by using two methods:
+
+The first method was to split the original print statement into to print() lines and adjoin them using the ', end=" "' method. 
+
+This is what the code looked like before the error was fixed:
+
+![Code before error fixed](assets/imagesforreadme/before1.PNG)
+
+This is what the code looked like after the error has been fixed:
+
+![Code after error fixed using =end" " method](assets/imagesforreadme/after1.PNG)
+
+
+The second method was to create a variable and allocate the text to it then create a second line of code with the print() statement featuring an f-string and insert the variable into that.
+
+This is what the code looked like before the error was fixed:
+
+![Code before error fixed](assets/imagesforreadme/before2.PNG)
+
+This is what the code looked like after the error has been fixed:
+
+![Code after error fixed using =end" " method](assets/imagesforreadme/after2.PNG)
+
+
 
 ## Deployment 
 This project was deployed using Code Institute’s mock terminal for Heroku

@@ -18,7 +18,7 @@ class The_options:
 
     def the_question(self):
         """
-        Shows the structure of question and randomly allocates the capital 
+        Shows the structure of question and randomly allocates the capital
         and two incorrect options to A, B and C
         """
         print(f"\nQuestion {self.number}: What is the capital of", end=" ")
