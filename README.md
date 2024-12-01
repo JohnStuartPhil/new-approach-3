@@ -67,7 +67,7 @@ Most of these lines going over column 80 contained a string of text.
 
 These lines were shortend to below column 80 by using two methods:
 
-The first method was to split the original print statement into to print() lines and adjoin them using the ', end=" "' method. 
+The first method was to split the original print statement into two print() lines and adjoin them using the ', end=" "' method. 
 
 This is what the code looked like before the error was fixed:
 
