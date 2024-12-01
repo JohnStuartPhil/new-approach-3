@@ -6,7 +6,9 @@ console = Console()
 
 
 class The_options:
-    """Defines the options"""
+    """
+    Defines the options
+    """
     def __init__(self, number, country, capital, incorrect_1, incorrect_2):
         self.number = number
         self.country = country
@@ -15,7 +17,10 @@ class The_options:
         self.incorrect_2 = incorrect_2
 
     def the_question(self):
-        """shows the repetative parts question with data in there"""
+        """
+        Shows the structure of question and randomly allocates the capital 
+        and two incorrect options to A, B and C
+        """
         print(f"\nQuestion {self.number}: What is the capital of", end=" ")
         print(f"{self.country}?\n")
         options = [self.capital, self.incorrect_1, self.incorrect_2]
@@ -27,6 +32,9 @@ class The_options:
 
 
 def the_instructions():
+    """
+    Welcome message and instructions on how to play the game
+    """
     message = "Welcome to the capitals quiz, press Enter to continue"
     console.input(f"\n[bold]{message}\n")
     print("You shall be asked for the capital of 10 countries\n")
@@ -41,7 +49,9 @@ def the_instructions():
 
 
 def the_quiz():
-    """the data"""
+    """
+    Data for the questions
+    """
     dictionary = [
         {
             'country': 'the United States',
@@ -155,7 +165,7 @@ def the_quiz():
 
 
 def clear_screen():
-    """clears the screen"""
+    """Clears the screen"""
     os.system("cls" if os.name == "nt" else "clear")
 
 
