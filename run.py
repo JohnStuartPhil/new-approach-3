@@ -135,7 +135,7 @@ def the_quiz():
             console.print("[bold]\nSorry, that was not the correct option", style="red")
             print("\nYour score remains at:", score)
 
-        time.sleep(3)
+        time.sleep(2)
         clear_screen()
 
     console.print("\n[bold]Thank your for playing the capitals quiz")
