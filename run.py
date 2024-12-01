@@ -134,7 +134,7 @@ def the_quiz():
         else:
             console.print("[bold]\nSorry, that was not the correct option", style="red")
             print("\nYour score remains at:", score)
-        
+
         time.sleep(3)
         clear_screen()
 
