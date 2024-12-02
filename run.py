@@ -42,6 +42,7 @@ def the_instructions():
     print("listed as A, B and C\n")
     print("Please select either A, B or C\n")
     print("You shall be advised if that is the correct answer or not\n")
+    print("You shall be awarded 1 point for each correct answer\n")
     print("If you select anything other than A, B or C, you shall", end=" ")
     print("be asked to make a choice again until you select A, B or C\n")
     input("Press Enter to continue\n")
@@ -50,7 +51,8 @@ def the_instructions():
 
 def the_quiz():
     """
-    Data for the questions
+    Data for the questions generating the question,
+    inputting a selected answer and giving a score.
     """
     dictionary = [
         {

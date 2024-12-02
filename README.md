@@ -1,23 +1,28 @@
 # Capitals Quiz 
-Capitals Quiz is a Python terminal quiz, which runs in the Code Institute mock terminal on Heroku. 
+Capitals Quiz is a Python terminal quiz, which runs in the Code Institute mock terminal on Heroku.
+
+It is a multiple choice game where the user has to decide between a choice of cities in a particular given country, which one the capital is. 
 
 [Here is the live version of the project](https://johns-capitals-quiz-91df1cc5b9af.herokuapp.com/)
 
 ![Website displayed on multiple screens](assets/imagesforreadme/screenshots.PNG)
 
 ## How to play 
-Users are asked what the capital is of 10 countries and are given a selection of 3 potential answers, listed as A, B and C. One of the answers shall be the capital and therefore the correct answer while the other two options shall be incorrect answers. The other two options however are both cities in that particular country. 
+The player is asked what the capital is of a total of 10 countries across the course of the game and are given a selection of 3 potential cities in that country. The 3 cities listed as A, B and C. One of the answers shall be the capital and therefore the correct answer while the other two options shall be incorrect answers. When the user answers correctly, they are awarded one point for each correct answer thus being able to obtain a maximum of 10 points. 
 
 Features: 
 
-Instructions on how to paly the game 
+Instructions on how to paly the game.
+
 ![Instructions](assets/imagesforreadme/instructions.PNG)
 
-The question is asked 
+The question is asked.
 
 ![The question](assets/imagesforreadme/question.PNG)
 
 If the player selects the correct option, the player is notified of this, is given a score of 1 for that question and then the next question is generated. 
+
+There is a 2 second pause, the previous question dissapears then the next question appears on the screen.
 
 ![Correct answer](assets/imagesforreadme/correctanswer.PNG)
 
@@ -25,25 +30,35 @@ If the player selects the incorrect option, the player is notified of this, is a
 
 ![Incorrect answer](assets/imagesforreadme/incorrectanswer.PNG)
 
-If the player selects anything other than a/A, b/B or c/C, the player is notified that what they have selected is not an option and is asked to select A, B or C again until they select a/A, b/B or c/C. 
+If the player selects anything other than A, B or C, the player is notified that what they have selected is not an option and is asked to select A, B or C again until they select A, B or C. The choice of A, B or C can be selected in either upper case or lower case.
 
 ![Not selected a/A, b/B nor c/C](assets/imagesforreadme/notanoption.PNG)
 
-Simiarly, if the player doesn't select anything and just presses Enter, the player is notified that what they have selected is not an option and is asked to select A, B or C again until they select a/A, b/B or c/C. 
+Similarly, if the player doesn't select anything and just presses Enter, the player is notified that what they have selected is not an option and is asked to select A, B or C again until they select A, B or C. 
 
 ![Only pressed Enter](assets/imagesforreadme/alsonotanoption.PNG)
 
-At the end of the quiz
-
-The player is given their final score out of 10
+At the end of the quiz, the player is given their final score out of 10
 
 ![At the end of the quiz](assets/imagesforreadme/endofquiz.PNG)
 
+If the player plays again, the three cities are not necessarily listed in the same order each time. 
+
+Below is an example where the correct answer is listed as A:
+
+![Example where the correct answer is listed as A](assets/imagesforreadme/random1.PNG)
+
+Below is an example where the correct answer is listed as C:
+
+![Example where the correct answer is listed as A](assets/imagesforreadme/random2.PNG)
+
 ## Testing 
-I have manually tested this project by doing the following: 
+The project has been manually tested by doing the following: 
 -   Passed the code through a PEP8 linter and confirmed there are no problems
 -   Given invalid inputs (including selecting nothing and just pressing return) 
--   Tested in my local terminal and the Code Institute Heroku terminal 
+-   Tested in the local terminal and the Code Institute Heroku terminal 
+
+Tests carried out:
 
 | Test  | Section  | Action  | Result  | Pass/Fail  |
 |---|---|---|---|---|
@@ -56,16 +71,11 @@ I have manually tested this project by doing the following:
 |  7 |  Question  | Entered a character other than a/A, b/B or c/C   | Advised that what was entered was not a valid option and was prompted to enter A, B or C  |  Pass |
 | 8  |  Question  | Entered multiple charachetrs including aa, bb, cc  | Advised that what was entered was not a valid option and was prompted to enter A, B or C  | Pass  |
 | 9  |  Question  | Pressed Enter without entering any characters  | Advised that what was entered was not a valid option and was prompted to enter A, B or C  | Pass  |
-|  10 | Question   | Repeated entering an invalid input multiple times  | Contnued to advise that what was entered was not a valid option and was prompted to enter A, B or C   |  Pass |
-
-## Validator 
--   PEP8 
-    -   No errors were returned from PEP8online.com
-
-![Screenshot of passing PEP8](assets/imagesforreadme/noerrorspep.PNG)
+| 10 | Question   | Repeated entering an invalid input multiple times  | Contnued to advise that what was entered was not a valid option and was prompted to enter A, B or C   |  Pass |
 
 ## Bugs 
-When testing in PEP8, initial bugs such as 'unexpected Whitespace' and 'no newline at end of file' were easily resolved, multiple lines of code brought up the error 'line too long (xx > 79 characters)'.
+When testing in PEP8, multiple lines of code brought up the error 'line too long (xx > 79 characters)'.
+
 Most of these lines going over column 80 contained a string of text.
 
 These lines were shortend to below column 80 by using two methods:
@@ -91,7 +101,11 @@ This is what the code looked like after the error has been fixed:
 
 ![Code after error fixed using variable and f-string method](assets/imagesforreadme/after2.PNG)
 
+## Validator 
+-   PEP8 
+    -   No errors were returned from PEP8online.com
 
+![Screenshot of passing PEP8](assets/imagesforreadme/noerrorspep.PNG)
 
 ## Deployment 
 This project was deployed using Code Institute’s mock terminal for Heroku
