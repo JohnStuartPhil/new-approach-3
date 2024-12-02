@@ -8,7 +8,7 @@ It is a multiple choice game where the user has to decide between a choice of ci
 ![Website displayed on multiple screens](assets/imagesforreadme/screenshots.PNG)
 
 ## How to play 
-The player is asked what the capital is of a total of 10 countries across the course of the game and are given a selection of 3 potential cities in that country. The 3 cities listed as A, B and C. One of the answers shall be the capital and therefore the correct answer while the other two options shall be incorrect answers. When the user answers correctly, they are awarded one point for each correct answer thus being able to obtain a maximum of 10 points. 
+The player is asked what the capital is of a total of 10 countries across the course of the game and are given a selection of 3 potential cities in that country. The 3 cities listed as A, B and C. One of the answers shall be the capital and therefore the correct answer while the other two options shall be incorrect answers. When the player answers correctly, they are awarded 1 point for each correct answer thus being able to obtain a maximum of 10 points. 
 
 Features: 
 
